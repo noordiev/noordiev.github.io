@@ -8,23 +8,36 @@
   <meta property="og:title" content="Nur Mukhammadiev">
   <meta property="og:description" content="Incoming @ Stanford GSB | Building">
   <meta property="og:url" content="https://noordiev.com">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#ececea">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23ededed' text-anchor='middle'>n</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
 </head>
 <body>
-  <button class="theme" id="theme" aria-label="Toggle light / dark theme" title="Toggle theme">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
-  </button>
+  <div class="backdrop" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  </div>
 
-  <main>
-    <header>
+  <nav class="topbar glass" aria-label="Sections">
+    <a class="brand" href="#top">nur</a>
+    <div class="nav-links">
+      <a href="#education">education</a>
+      <a href="#experience-section">experience</a>
+      <a href="#building">building</a>
+      <a href="#press">press</a>
+    </div>
+    <button class="theme" id="theme" aria-label="Toggle light / dark theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+    </button>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
       <h1>Nur Mukhammadiev</h1>
       <p class="tagline">incoming @ stanford gsb <span class="sep">|</span> building</p>
       <nav class="socials" aria-label="Links">
@@ -49,9 +62,9 @@
       </nav>
     </header>
 
-    <section>
+    <section id="education">
       <h2>education</h2>
-      <ul class="list">
+      <ul class="list glass panel">
         <li>
           <img class="mark" src="images/logos/stanford.png" alt="" width="36" height="36">
           <div>
@@ -69,9 +82,9 @@
       </ul>
     </section>
 
-    <section>
+    <section id="experience-section">
       <h2>experience</h2>
-      <ul class="list" id="experience">
+      <ul class="list glass panel" id="experience">
         <li>
           <img class="mark" src="images/logos/qatarairways.png" alt="" width="36" height="36">
           <div>
@@ -137,34 +150,34 @@
       </ul>
     </section>
 
-    <section>
+    <section id="building">
       <h2>building</h2>
       <div class="projects">
-        <a class="project" href="https://airlinesalaries.com" target="_blank" rel="noopener">
+        <a class="project glass" href="https://airlinesalaries.com" target="_blank" rel="noopener">
           <img class="mark" src="images/logos/airlinesalaries.png" alt="" width="36" height="36">
           <p class="title">airline salaries</p>
           <p class="desc">salary transparency for the aviation industry.</p>
           <p class="meta">airlinesalaries.com ↗</p>
         </a>
-        <a class="project" href="https://viberoles.ai" target="_blank" rel="noopener">
+        <a class="project glass" href="https://viberoles.ai" target="_blank" rel="noopener">
           <img class="mark" src="images/logos/viberoles.png" alt="" width="36" height="36">
           <p class="title">viberoles</p>
           <p class="desc">a job board for ai roles.</p>
           <p class="meta">viberoles.ai ↗</p>
         </a>
-        <a class="project" href="https://info-graphics.ai" target="_blank" rel="noopener">
+        <a class="project glass" href="https://info-graphics.ai" target="_blank" rel="noopener">
           <img class="mark" src="images/logos/infographics.png" alt="" width="36" height="36">
           <p class="title">info-graphics</p>
           <p class="desc">ai-generated infographics.</p>
           <p class="meta">info-graphics.ai ↗</p>
         </a>
-        <a class="project" href="https://gccgrads.com" target="_blank" rel="noopener">
+        <a class="project glass" href="https://gccgrads.com" target="_blank" rel="noopener">
           <img class="mark" src="images/logos/gccgrads.png" alt="" width="36" height="36">
           <p class="title">gccgrads</p>
           <p class="desc">regional jobs site, grown from a 600-subscriber newsletter.</p>
           <p class="meta">gccgrads.com ↗</p>
         </a>
-        <div class="project">
+        <div class="project glass">
           <span class="mark"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 13.6c2.6.2 4.5 2.1 4.5 4.9"/></svg></span>
           <p class="title">mentoring</p>
           <p class="desc">students from central asia and the middle east. 10+ mentees into universities and jobs.</p>
@@ -173,9 +186,9 @@
       </div>
     </section>
 
-    <section>
+    <section id="press">
       <h2>writing &amp; press</h2>
-      <ul class="rows press">
+      <ul class="rows press glass panel">
         <li>
           <span class="tag interview">interview</span>
           <a href="https://www.youtube.com/watch?v=umynCiOgIsQ" target="_blank" rel="noopener">how to be high agency</a>
@@ -216,7 +229,7 @@
 
     <section>
       <h2>awards</h2>
-      <ul class="rows">
+      <ul class="rows glass panel">
         <li><span>icpc qatar nationals, top 10</span><span class="meta">2023</span></li>
         <li><span>microsoft imagine cup, 4th nationally</span><span class="meta">2022</span></li>
         <li><span>icpc mena regional qualifier</span><span class="meta">2021</span></li>
@@ -236,10 +249,20 @@
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('theme').addEventListener('click', () => {
       const root = document.documentElement;
-      const dark = root.dataset.theme ? root.dataset.theme === 'dark' : !matchMedia('(prefers-color-scheme: light)').matches;
-      root.dataset.theme = dark ? 'light' : 'dark';
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
       try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
     });
+
+    // liquid glass hover: mark hover targets and track the pointer for the sheen
+    document.querySelectorAll('.list li, .rows li, .project, .nav-links a, .socials a, .brand')
+      .forEach(el => el.classList.add('lg'));
+    document.addEventListener('pointermove', e => {
+      const el = e.target.closest && e.target.closest('.lg');
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }, { passive: true });
   </script>
 </body>
 </html>
