@@ -8,37 +8,17 @@
   <meta property="og:title" content="Nur Mukhammadiev">
   <meta property="og:description" content="Incoming @ Stanford GSB | Building">
   <meta property="og:url" content="https://noordiev.com">
-  <meta name="theme-color" content="#ececea">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23ededed' text-anchor='middle'>n</text></svg>">
+  <meta name="theme-color" content="#fefefe">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111'/><text x='16' y='22' font-family='Arial,sans-serif' font-weight='700' font-size='17' fill='%23fff' text-anchor='middle'>n</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script>
-    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
-  <div class="backdrop" aria-hidden="true">
-    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
-  </div>
-
-  <nav class="topbar glass" aria-label="Sections">
-    <a class="brand" href="#top">nur</a>
-    <div class="nav-links">
-      <a href="#education">education</a>
-      <a href="#experience-section">experience</a>
-      <a href="#building">building</a>
-      <a href="#press">press</a>
-    </div>
-    <button class="theme" id="theme" aria-label="Toggle light / dark theme" title="Toggle theme">
-      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
-    </button>
-  </nav>
-
-  <main id="top">
+  <main>
     <header class="hero">
-      <h1>Nur Mukhammadiev</h1>
+      <h1>nur mukhammadiev</h1>
       <p class="tagline">incoming @ stanford gsb <span class="sep">|</span> building</p>
       <nav class="socials" aria-label="Links">
         <a href="mailto:nm993@georgetown.edu" aria-label="Email" title="email">
@@ -62,207 +42,143 @@
       </nav>
     </header>
 
-    <section id="education">
-      <h2>education</h2>
-      <ul class="list glass panel">
-        <li>
-          <img class="mark" src="images/logos/stanford.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">stanford graduate school of business</p>
-            <p class="meta">mba · 2027 – 2029</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/georgetown.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">georgetown university</p>
-            <p class="meta">b.s. international economics, minor in philosophy · 2020 – 2024</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <section class="card" id="education">
+        <h2>education</h2>
+        <ul class="rows">
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/stanford.png" alt="" width="16" height="16"><span>stanford university</span></span><span class="dots"></span><span class="meta">mba</span><span class="year">2027 – 2029</span></div>
+            <p class="sub">graduate school of business</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/georgetown.png" alt="" width="16" height="16"><span>georgetown university</span></span><span class="dots"></span><span class="meta">b.s.</span><span class="year">2020 – 2024</span></div>
+            <p class="sub">economics and philosophy</p>
+          </li>
+        </ul>
+      </section>
 
-    <section id="experience-section">
-      <h2>experience</h2>
-      <ul class="list glass panel" id="experience">
-        <li>
-          <img class="mark" src="images/logos/qatarairways.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">qatar airways</p>
-            <p class="meta">analyst, revenue management · jan 2025 – now</p>
-            <p class="desc">analytics and bi for ancillary. ai taskforce.</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/investqatar.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">invest qatar</p>
-            <p class="meta">analyst / economist · feb 2024 – dec 2024</p>
-            <p class="desc">gdp nowcasting with dynamic factor models. three sector reports on fdi opportunities.</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/qcri.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">qatar computing research institute</p>
-            <p class="meta">machine learning intern · jun 2024 – aug 2024</p>
-            <p class="desc">geolocated news datasets (100k+ articles) for the fanar arabic llm.</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/ingenium.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">ingenium school</p>
-            <p class="meta">co-founder &amp; teacher · jun 2018 – aug 2024</p>
-            <p class="desc">ngo co-founded with my sister. coding and english for 200+ kids in kokand.</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/georgetown.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">georgetown university</p>
-            <p class="meta">research assistant · dec 2021 – jul 2024</p>
-            <p class="desc">research assistant to five economics professors: nlp on contracts, ocr on the nyt archive, etc.</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/viavii.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">viavii</p>
-            <p class="meta">product management intern · jun 2023 – aug 2023</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/hapondo.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">hapondo</p>
-            <p class="meta">product management intern · may 2023 – jun 2023</p>
-          </div>
-        </li>
-        <li>
-          <img class="mark" src="images/logos/gmc.png" alt="" width="36" height="36">
-          <div>
-            <p class="title">global millennial capital</p>
-            <p class="meta">venture capital intern · may 2022 – jul 2022</p>
-            <p class="desc">co-led a seed deal from sourcing to a $250k investment.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <section class="card" id="experience">
+        <h2>experience</h2>
+        <ul class="rows">
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/qatarairways.png" alt="" width="16" height="16"><span>qatar airways</span></span><span class="dots"></span><span class="meta">data scientist</span><span class="year">jan 2025 – now</span></div>
+            <p class="sub">analytics and bi for ancillary. ai taskforce.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/gccgrads.png" alt="" width="16" height="16"><span>gccgrads</span></span><span class="dots"></span><span class="meta">founder &amp; mentor</span><span class="year">jun 2021 – now</span></div>
+            <p class="sub">mentoring students from central asia and the middle east. 10+ mentees into universities and jobs.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/investqatar.png" alt="" width="16" height="16"><span>invest qatar</span></span><span class="dots"></span><span class="meta">economist</span><span class="year">feb 2024 – dec 2024</span></div>
+            <p class="sub">gdp nowcasting with dynamic factor models. three sector reports on fdi opportunities.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/qcri.png" alt="" width="16" height="16"><span>qatar computing research institute</span></span><span class="dots"></span><span class="meta">ml intern</span><span class="year">jun 2024 – aug 2024</span></div>
+            <p class="sub">geolocated news datasets (100k+ articles) for the fanar arabic llm.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/ingenium.png" alt="" width="16" height="16"><span>ingenium school</span></span><span class="dots"></span><span class="meta">co-founder &amp; teacher</span><span class="year">jun 2018 – aug 2024</span></div>
+            <p class="sub">ngo co-founded with my sister. coding and english for 200+ kids in kokand.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/georgetown.png" alt="" width="16" height="16"><span>georgetown university</span></span><span class="dots"></span><span class="meta">research assistant</span><span class="year">dec 2021 – jul 2024</span></div>
+            <p class="sub">research assistant to five economics professors: nlp on contracts, ocr on the nyt archive, etc.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/viavii.png" alt="" width="16" height="16"><span>viavii</span></span><span class="dots"></span><span class="meta">product intern</span><span class="year">jun 2023 – aug 2023</span></div>
+            <p class="sub">marketplace for local travel experiences.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/hapondo.png" alt="" width="16" height="16"><span>hapondo</span></span><span class="dots"></span><span class="meta">product intern</span><span class="year">may 2023 – jun 2023</span></div>
+            <p class="sub">qatar's real estate platform.</p>
+          </li>
+          <li>
+            <div class="line"><span class="name"><img class="logo" src="images/logos/gmc.png" alt="" width="16" height="16"><span>global millennial capital</span></span><span class="dots"></span><span class="meta">vc intern</span><span class="year">may 2022 – jul 2022</span></div>
+            <p class="sub">co-led a seed deal from sourcing to a $250k investment.</p>
+          </li>
+        </ul>
+      </section>
 
-    <section id="building">
-      <h2>building</h2>
-      <div class="projects">
-        <a class="project glass" href="https://airlinesalaries.com" target="_blank" rel="noopener">
-          <img class="mark" src="images/logos/airlinesalaries.png" alt="" width="36" height="36">
-          <p class="title">airline salaries</p>
-          <p class="desc">salary transparency for the aviation industry.</p>
-          <p class="meta">airlinesalaries.com ↗</p>
-        </a>
-        <a class="project glass" href="https://viberoles.ai" target="_blank" rel="noopener">
-          <img class="mark" src="images/logos/viberoles.png" alt="" width="36" height="36">
-          <p class="title">viberoles</p>
-          <p class="desc">a job board for ai roles.</p>
-          <p class="meta">viberoles.ai ↗</p>
-        </a>
-        <a class="project glass" href="https://info-graphics.ai" target="_blank" rel="noopener">
-          <img class="mark" src="images/logos/infographics.png" alt="" width="36" height="36">
-          <p class="title">info-graphics</p>
-          <p class="desc">ai-generated infographics.</p>
-          <p class="meta">info-graphics.ai ↗</p>
-        </a>
-        <a class="project glass" href="https://gccgrads.com" target="_blank" rel="noopener">
-          <img class="mark" src="images/logos/gccgrads.png" alt="" width="36" height="36">
-          <p class="title">gccgrads</p>
-          <p class="desc">regional jobs site, grown from a 600-subscriber newsletter.</p>
-          <p class="meta">gccgrads.com ↗</p>
-        </a>
-        <div class="project glass">
-          <span class="mark"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 13.6c2.6.2 4.5 2.1 4.5 4.9"/></svg></span>
-          <p class="title">mentoring</p>
-          <p class="desc">students from central asia and the middle east. 10+ mentees into universities and jobs.</p>
-          <p class="meta">2021 – now</p>
-        </div>
-      </div>
-    </section>
+      <section class="card" id="building">
+        <h2>building</h2>
+        <ul class="rows">
+          <li>
+            <div class="line"><a class="name" href="https://airlinesalaries.com" target="_blank" rel="noopener"><img class="logo" src="images/logos/airlinesalaries.png" alt="" width="16" height="16"><span>airline salaries</span></a><span class="dots"></span><span class="meta">airlinesalaries.com</span><span class="status active">active</span></div>
+            <p class="sub">salary transparency for the aviation industry.</p>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://viberoles.ai" target="_blank" rel="noopener"><img class="logo" src="images/logos/viberoles.png" alt="" width="16" height="16"><span>viberoles</span></a><span class="dots"></span><span class="meta">viberoles.ai</span><span class="status active">active</span></div>
+            <p class="sub">a job board for ai roles.</p>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://info-graphics.ai" target="_blank" rel="noopener"><img class="logo" src="images/logos/infographics.png" alt="" width="16" height="16"><span>info-graphics</span></a><span class="dots"></span><span class="meta">info-graphics.ai</span><span class="status active">active</span></div>
+            <p class="sub">ai-generated infographics.</p>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://gccgrads.com" target="_blank" rel="noopener"><img class="logo" src="images/logos/gccgrads.png" alt="" width="16" height="16"><span>gccgrads</span></a><span class="dots"></span><span class="meta">gccgrads.com</span><span class="status active">active</span></div>
+            <p class="sub">regional jobs site, grown from a 600-subscriber newsletter.</p>
+          </li>
+        </ul>
+      </section>
 
-    <section id="press">
-      <h2>writing &amp; press</h2>
-      <ul class="rows press glass panel">
-        <li>
-          <span class="tag interview">interview</span>
-          <a href="https://www.youtube.com/watch?v=umynCiOgIsQ" target="_blank" rel="noopener">how to be high agency</a>
-          <span class="meta">silkroad podcast · jan 2026</span>
-        </li>
-        <li>
-          <span class="tag news">news</span>
-          <a href="https://thepeninsulaqatar.com/article/14/05/2024/change-making-members-of-qfs-class-of-2024-aspire-to-drive-global-impact" target="_blank" rel="noopener">change-making members of qf's class of 2024</a>
-          <span class="meta">the peninsula · may 2024</span>
-        </li>
-        <li>
-          <span class="tag news">news</span>
-          <a href="https://guq.qatar.georgetown.edu/news/georgetown-qatar-graduates-aim-high-as-they-follow-paths-of-global-leaders-and-innovators/" target="_blank" rel="noopener">gu-q graduates aim high</a>
-          <span class="meta">georgetown qatar · may 2024</span>
-        </li>
-        <li>
-          <span class="tag paper">paper</span>
-          <a href="https://doi.org/10.3389/fmedt.2023.1253001" target="_blank" rel="noopener">eye-tracking technology in medical practice</a>
-          <span class="meta">frontiers in medical technology · nov 2023</span>
-        </li>
-        <li>
-          <span class="tag interview">interview</span>
-          <a href="https://youtu.be/aiBDU04Sp34?list=PLkREkayoYCyKhSPWgRW--6QFQ3yOjGdrL" target="_blank" rel="noopener">the uzbek guy who won $300,000 in grants <span class="lang">uz</span></a>
-          <span class="meta">ibrat farzandlari · jun 2023</span>
-        </li>
-        <li>
-          <span class="tag interview">interview</span>
-          <a href="https://www.youtube.com/watch?v=2aJCrw7K3qU" target="_blank" rel="noopener">siblings at top us universities <span class="lang">uz</span></a>
-          <span class="meta">voice of america · oct 2022</span>
-        </li>
-        <li>
-          <span class="tag news">news</span>
-          <a href="https://guq.qatar.georgetown.edu/news/computer-coding-competition-finish-qualifies-georgetown-team-for-regional-event-in-egypt/" target="_blank" rel="noopener">coding competition finish qualifies gu-q team for regionals</a>
-          <span class="meta">georgetown qatar · nov 2021</span>
-        </li>
-      </ul>
-    </section>
+      <section class="card" id="press">
+        <h2>writing &amp; press</h2>
+        <ul class="rows">
+          <li>
+            <div class="line"><a class="name" href="https://www.youtube.com/watch?v=umynCiOgIsQ" target="_blank" rel="noopener"><span>how to be high agency</span></a><span class="dots"></span><span class="meta">silkroad podcast</span><span class="year">2026</span><span class="status interview">interview</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://thepeninsulaqatar.com/article/14/05/2024/change-making-members-of-qfs-class-of-2024-aspire-to-drive-global-impact" target="_blank" rel="noopener"><span>change-making members of qf's class of 2024</span></a><span class="dots"></span><span class="meta">the peninsula</span><span class="year">2024</span><span class="status news">news</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://guq.qatar.georgetown.edu/news/georgetown-qatar-graduates-aim-high-as-they-follow-paths-of-global-leaders-and-innovators/" target="_blank" rel="noopener"><span>gu-q graduates aim high</span></a><span class="dots"></span><span class="meta">georgetown qatar</span><span class="year">2024</span><span class="status news">news</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://doi.org/10.3389/fmedt.2023.1253001" target="_blank" rel="noopener"><span>eye-tracking technology in medical practice</span></a><span class="dots"></span><span class="meta">frontiers</span><span class="year">2023</span><span class="status paper">paper</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://youtu.be/aiBDU04Sp34?list=PLkREkayoYCyKhSPWgRW--6QFQ3yOjGdrL" target="_blank" rel="noopener"><span>the uzbek guy who won $300,000 in grants</span></a><span class="dots"></span><span class="meta">ibrat farzandlari</span><span class="year">2023</span><span class="status interview">interview</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://www.youtube.com/watch?v=2aJCrw7K3qU" target="_blank" rel="noopener"><span>siblings at top us universities</span></a><span class="dots"></span><span class="meta">voice of america</span><span class="year">2022</span><span class="status interview">interview</span></div>
+          </li>
+          <li>
+            <div class="line"><a class="name" href="https://guq.qatar.georgetown.edu/news/computer-coding-competition-finish-qualifies-georgetown-team-for-regional-event-in-egypt/" target="_blank" rel="noopener"><span>coding competition finish qualifies gu-q team</span></a><span class="dots"></span><span class="meta">georgetown qatar</span><span class="year">2021</span><span class="status news">news</span></div>
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>awards</h2>
-      <ul class="rows glass panel">
-        <li><span>icpc qatar nationals, top 10</span><span class="meta">2023</span></li>
-        <li><span>microsoft imagine cup, 4th nationally</span><span class="meta">2022</span></li>
-        <li><span>icpc mena regional qualifier</span><span class="meta">2021</span></li>
-        <li><span>sips fund scholar, $6,000</span><span class="meta">georgetown</span></li>
-        <li><span>dean's undergraduate research fund, $3,600</span><span class="meta">georgetown</span></li>
-        <li><span>sips summer scholar, $1,300</span><span class="meta">georgetown</span></li>
-      </ul>
-    </section>
+      <section class="card" id="awards">
+        <h2>awards</h2>
+        <ul class="rows">
+          <li>
+            <div class="line"><span class="name"><span>icpc qatar nationals, top 10</span></span><span class="dots"></span><span class="meta">icpc</span><span class="year">2023</span></div>
+          </li>
+          <li>
+            <div class="line"><span class="name"><span>microsoft imagine cup, 4th nationally</span></span><span class="dots"></span><span class="meta">microsoft</span><span class="year">2022</span></div>
+          </li>
+          <li>
+            <div class="line"><span class="name"><span>icpc mena regional qualifier</span></span><span class="dots"></span><span class="meta">icpc</span><span class="year">2021</span></div>
+          </li>
+          <li>
+            <div class="line"><span class="name"><span>sips fund scholar, $6,000</span></span><span class="dots"></span><span class="meta">georgetown</span></div>
+          </li>
+          <li>
+            <div class="line"><span class="name"><span>dean's undergraduate research fund, $3,600</span></span><span class="dots"></span><span class="meta">georgetown</span></div>
+          </li>
+          <li>
+            <div class="line"><span class="name"><span>sips summer scholar, $1,300</span></span><span class="dots"></span><span class="meta">georgetown</span></div>
+          </li>
+        </ul>
+      </section>
 
     <footer>
       <span>© <span id="year">2026</span> nur mukhammadiev</span>
-      <span class="mono">doha, qatar</span>
+      <span>doha, qatar</span>
     </footer>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('theme').addEventListener('click', () => {
-      const root = document.documentElement;
-      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-    });
-
-    // liquid glass hover: mark hover targets and track the pointer for the sheen
-    document.querySelectorAll('.list li, .rows li, .project, .nav-links a, .socials a, .brand')
-      .forEach(el => el.classList.add('lg'));
-    document.addEventListener('pointermove', e => {
-      const el = e.target.closest && e.target.closest('.lg');
-      if (!el) return;
-      const r = el.getBoundingClientRect();
-      el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      el.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    }, { passive: true });
   </script>
 </body>
 </html>
